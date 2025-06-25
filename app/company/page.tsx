@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { usePageHeader } from "@/contexts/page-header-context";
 import { useTranslation } from "react-i18next";
-import { DeviceMetrics } from "@/app/company/dashboard/components/device-metrics";
-import { DeviceCharts } from "@/app/company/dashboard/components/device-charts";
-import { DeviceTable } from "@/app/company/dashboard/components/device-table";
+import { DeviceMetrics } from "./dashboard/components/device-metrics";
+import { DeviceCharts } from "./dashboard/components/device-charts";
+import { DeviceTable } from "./dashboard/components/device-table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Select,
@@ -165,7 +165,7 @@ export default function DashboardPage() {
               </strong>
               <SelectValue
                 placeholder={t("dashboard.selectDevice")}
-                className="text-sm font-medium"
+                className="text-sm font-medium mr-4"
               />
             </SelectTrigger>
             <SelectContent>

@@ -1,8 +1,12 @@
+"use client";
+
 import axios from "axios";
 import { authClient } from "@/lib/auth-client";
 import { ValidationError } from "@/types/error";
 
-const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
+const baseURL =
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  "https://private-tutor-api.yonesoft.com/api";
 
 const ApiClient = () => {
   const defaultOptions = {

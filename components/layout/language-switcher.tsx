@@ -18,9 +18,6 @@ const languages = [
 export function LanguageSwitcher() {
   const { i18n } = useTranslation();
 
-  const currentLanguage =
-    languages.find((lang) => lang.code === i18n.language) || languages[0];
-
   const handleLanguageChange = (languageCode: string) => {
     i18n.changeLanguage(languageCode);
   };
@@ -28,12 +25,11 @@ export function LanguageSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="cursor-pointer">
-        <Button variant="outline" className="gap-2">
-          <Globe className="h-4 w-4" />
-          <span className="hidden sm:block">
-            {currentLanguage.flag} {currentLanguage.name}
-          </span>
-          <span className="sm:hidden">{currentLanguage.flag}</span>
+        <Button
+          variant="outline"
+          className="hover:bg-muted h-10 w-10 rounded-full p-0"
+        >
+          <Globe className="h-[1.2rem] w-[1.2rem]" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-40 ">

@@ -14,10 +14,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <SidebarProvider>
         <AppSidebar />
         <SidebarInset>
-          <div className="px-6">
+          <div className="">
             <PageHeaderProvider>
               <PageHeader />
-              {children}
+              <div className="main-content">{children}</div>
             </PageHeaderProvider>
           </div>
         </SidebarInset>

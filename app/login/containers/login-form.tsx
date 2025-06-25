@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Loader2 } from "lucide-react";
 import { authClient } from "@/lib/auth-client";
+import { toast } from "sonner";
 
 export function LoginForm({
   className,
@@ -18,16 +19,26 @@ export function LoginForm({
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const handleLogin = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsLoading(true);
-    setError("");
 
     try {
-      const result = await authClient.login(username, password);
+      // Create a promise for the login operation
+      const loginPromise = authClient.login(username, password);
+
+      // Use toast.promise to show loading, success, and error states
+      await toast.promise(loginPromise, {
+        loading: t("common.loading"),
+        success: t("login.form.success"),
+        error: (err) =>
+          err instanceof Error ? err.message : "An unknown error occurred",
+      });
+
+      // Get the result from the promise
+      const result = await loginPromise;
 
       // Save authentication data to localStorage
       authClient.saveAuthData(result.user, result.tokens);
@@ -35,11 +46,8 @@ export function LoginForm({
       // Redirect to dashboard
       router.push("/company/dashboard");
     } catch (err) {
-      if (err instanceof Error) {
-        setError(err.message);
-      } else {
-        setError("An unknown error occurred");
-      }
+      // Error is already handled by toast.promise
+      console.error("Login error:", err);
     } finally {
       setIsLoading(false);
     }
@@ -47,7 +55,6 @@ export function LoginForm({
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
-      {error && <p style={{ color: "red" }}>{error}</p>}
       <form onSubmit={handleLogin}>
         <div className="flex flex-col gap-6">
           <div className="grid gap-2">

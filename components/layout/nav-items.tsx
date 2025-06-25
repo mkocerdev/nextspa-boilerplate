@@ -24,7 +24,7 @@ export function NavItems({
   const pathname = usePathname();
 
   return (
-    <SidebarGroup className="group-data-[collapsible=icon]:hidden mt-6">
+    <SidebarGroup className="group-data-[collapsible=icon]:hidden mt-6 px-0">
       <SidebarMenu>
         {projects.map((item) => (
           <SidebarMenuItem key={item.i18nkey}>

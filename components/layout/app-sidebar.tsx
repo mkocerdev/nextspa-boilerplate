@@ -55,8 +55,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       : "/assets/nebisense-logo.png";
 
   return (
-    <Sidebar variant="inset" {...props}>
-      <SidebarHeader>
+    <Sidebar
+      variant="inset"
+      {...props}
+      className="p-0 border-r border-sidebar-border"
+    >
+      <SidebarHeader className="border-b border-sidebar-border px-4 py-5">
         <SidebarMenu>
           <SidebarMenuItem className="pr-12">
             <Image
@@ -69,10 +73,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className="px-4">
         <NavItems projects={data.items} />
       </SidebarContent>
-      <SidebarFooter>
+      <SidebarFooter className="px-4">
         {/* User navigation moved to page header */}
       </SidebarFooter>
     </Sidebar>

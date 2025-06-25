@@ -30,6 +30,11 @@ i18n.use(initReactI18next).init({
   fallbackLng: "tr",
   interpolation: {
     escapeValue: false,
+    prefix: "{",
+    suffix: "}",
+  },
+  react: {
+    useSuspense: false,
   },
 });
 

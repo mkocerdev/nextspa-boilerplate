@@ -21,13 +21,14 @@ export default function Login() {
             alt="logo"
             width={200}
             height={200}
+            className="bg-card shadow-2xl rounded-lg p-4 border"
           />
         </div>
         <div className="flex flex-col gap-6">
-          <Card className="overflow-hidden p-0">
+          <Card className="overflow-hidden shadow-2xl p-0">
             <CardContent className="grid p-0 md:grid-cols-2">
               <div className="p-6 md:p-8">
-                <CardHeader className="text-center">
+                <CardHeader className="text-left py-6 px-0">
                   <CardTitle className="text-2xl">
                     {t("login.form.title")}
                   </CardTitle>
@@ -36,13 +37,13 @@ export default function Login() {
                   </CardDescription>
                 </CardHeader>
 
-                <LoginForm />
+                <LoginForm className="mt-3" />
               </div>
-              <div className="bg-muted relative hidden md:block">
+              <div className="bg-black relative hidden md:block">
                 <Image
                   src="/assets/nebisense-login-hero.png"
                   alt="Image"
-                  className="absolute inset-0 h-full w-full object-cover object-top"
+                  className="absolute inset-0 h-full w-full object-contain object-top p-4"
                   width={500}
                   height={500}
                   objectFit="cover"

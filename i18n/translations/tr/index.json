@@ -1,67 +1,45 @@
 {
-  "welcome": "Web sitemize hoş geldiniz!",
-  "description": "Bu, çok dilli destekli bir Next.js uygulamasıdır.",
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "{timeOfDay}, {name}! Tüm sistemler çalışıyor! 📊",
+    "today": "Bugün",
+    "timeOfDay": {
+      "morning": "Günaydın",
+      "afternoon": "İyi Günler",
+      "evening": "İyi Akşamlar",
+      "night": "İyi Geceler"
+    },
+    "selectDevice": "Cihaz Seç",
+    "metrics": {
+      "pressureOne": "Basınç Bir",
+      "pressureTwo": "Basınç İki",
+      "inHeat": "Giriş Isısı",
+      "outHeat": "Çıkış Isısı",
+      "currentSystemPressure": "Mevcut sistem basıncı",
+      "secondarySystemPressure": "İkincil sistem basıncı",
+      "inputTemperature": "Giriş sıcaklığı",
+      "outputTemperature": "Çıkış sıcaklığı"
+    },
+    "charts": {
+      "temperatureComparison": "Sıcaklık Karşılaştırması",
+      "pressureLevels": "Basınç Seviyeleri"
+    },
+    "table": {
+      "deviceDetails": "Cihaz Detayları",
+      "deviceName": "Cihaz Adı",
+      "pressure": "Basınç (bar)",
+      "inHeat": "Giriş Isısı (°C)",
+      "outHeat": "Çıkış Isısı (°C)",
+      "status": "Durum",
+      "timestamp": "Zaman",
+      "searchPlaceholder": "Cihazlarda ara..."
+    }
+  },
   "sidebar": {
     "dashboard": "Dashboard",
     "devices": "Cihazlar",
     "listeners": "Dinleyiciler",
     "flows": "Akışlar"
-  },
-  "login": {
-    "title": "Giriş Yap",
-    "form": {
-      "title": "Giriş Yap",
-      "description": "Hesabınıza giriş yapmak için aşağıya e-posta adresinizi girin",
-      "email": "E posta Adresi",
-      "password": "Şife",
-      "forgotYourPassword": "Şifremi Unuttum",
-      "button": "Giriş Yap",
-      "dontHaveAccount": "Hesabınız yok mu?",
-      "signUp": "Kaydolun",
-      "loading": "Yükleniyor..."
-    }
-  },
-  "signUp": {
-    "title": "Üye Ol",
-    "form": {
-      "title": "Üye Ol",
-      "description": "Sizde firmanızı yönetmek için bir hesap oluşturun",
-      "firmName": "Firma Adı",
-      "name": "Adınız",
-      "surname": "Soyadınız",
-      "phoneNumber": "Telefon Numarası",
-      "email": "E posta Adresi",
-      "password": "Şife",
-      "forgotYourPassword": "Şifremi Unuttum",
-      "birthDate": "Doğum Tarihiniz",
-      "address": "Addres",
-      "gender": "Cinsiyetiniz",
-      "button": "Üye Ol",
-      "doHaveAccount": "Hesabınız var mı?",
-      "login": "Giriş Yap"
-    }
-  },
-  "breadcrumbs": {
-    "dashboard": "Dashboard",
-    "devices": "Cihazlar",
-    "edit": "Düzenle",
-    "create": "Oluştur",
-    "newDevice": "Yeni Cihaz"
-  },
-  "settings": {
-    "title": "Ayarlar"
-  },
-  "roles": {
-    "none": "Yok",
-    "manager": "Yönetici",
-    "teacher": "Öğretmen",
-    "student": "Öğrenci"
-  },
-  "calendar": {
-    "title": "Takvim"
-  },
-  "dashboard": {
-    "title": "Dashboard"
   },
   "devices": {
     "title": "Cihazlar",
@@ -69,191 +47,59 @@
     "editDevice": "Cihaz Düzenle",
     "searchPlaceholder": "Cihaz adına göre ara...",
     "table": {
+      "edit": "Düzenle",
+      "delete": "Sil",
       "headers": {
-        "select": "Seç",
         "fullName": "Ad Soyad",
-        "name": "Ad",
-        "surname": "Soyad",
         "phoneNumber": "Telefon Numarası",
         "email": "E-posta",
-        "role": "Rol",
-        "firm": "Firma",
         "gender": "Cinsiyet",
-        "birthDate": "Doğum Tarihi",
         "actions": "İşlemler"
-      },
-      "fullName": "Ad Soyad",
-      "name": "Ad",
-      "surname": "Soyad",
-      "phoneNumber": "Telefon Numarası",
-      "email": "E-posta",
-      "role": "Rol",
-      "firm": "Firma",
-      "gender": "Cinsiyet",
-      "birthDate": "Doğum Tarihi",
-      "edit": "Düzenle",
-      "delete": "Sil"
-    },
-    "form": {
-      "title": "Cihaz Bilgileri",
-      "createTitle": "Yeni Cihaz Ekle",
-      "editTitle": "Cihaz Bilgilerini Düzenle",
-      "createDescription": "Yeni bir cihaz oluşturun",
-      "editDescription": "Cihaz bilgilerini güncelleyin",
-      "name": "Ad",
-      "surname": "Soyad",
-      "fullName": "Ad Soyad",
-      "email": "E-posta",
-      "phoneNumber": "Telefon",
-      "firm": "Firma",
-      "gender": "Cinsiyet",
-      "birthDate": "Doğum Tarihi",
-      "password": "Şifre",
-      "newPassword": "Yeni Şifre",
-      "oldPassword": "Mevcut Şifre",
-      "changePassword": "Şifre Değiştir (İsteğe Bağlı)",
-      "placeholders": {
-        "name": "Cihaz adı",
-        "surname": "Cihaz soyadı",
-        "fullName": "Cihaz adı ve soyadı",
-        "email": "ornek@email.com",
-        "phoneNumber": "5551234567",
-        "firm": "Firma adı",
-        "password": "Güvenli şifre",
-        "newPassword": "Yeni şifrenizi girin",
-        "oldPassword": "Mevcut şifrenizi girin",
-        "gender": "Cinsiyet seçin"
-      },
-      "required": "Zorunlu alanlar *",
-      "optional": "İsteğe Bağlı"
-    },
-    "actions": {
-      "save": "Kaydet",
-      "saving": "Kaydediliyor...",
-      "create": "Cihaz Oluştur",
-      "creating": "Oluşturuluyor...",
-      "cancel": "İptal",
-      "delete": "Sil",
-      "confirmDelete": "Bu cihazı silmek istediğinizden emin misiniz?"
-    },
-    "messages": {
-      "createSuccess": "Cihaz başarıyla oluşturuldu",
-      "updateSuccess": "Cihaz bilgileri güncellendi",
-      "deleteSuccess": "Cihaz silindi",
-      "createError": "Cihaz oluşturulurken hata oluştu",
-      "updateError": "Cihaz güncellenirken hata oluştu",
-      "deleteError": "Cihaz silinirken hata oluştu",
-      "notFound": "Cihaz bulunamadı"
+      }
     }
   },
-  "firms": {
-    "title": "Firmalar",
-    "newFirm": "Yeni Firma",
-    "searchPlaceholder": "Firma adına göre ara...",
-    "table": {
-      "name": "Firma Adı",
-      "webSite": "Web Sitesi",
-      "email": "E-posta",
-      "phone": "Telefon",
-      "country": "Ülke",
-      "city": "Şehir",
-      "county": "İlçe",
-      "district": "Mahalle",
+  "settings": {
+    "title": "Ayarlar"
+  },
+  "login": {
+    "form": {
+      "title": "Giriş Yap",
+      "description": "Hesabınıza giriş yapmak için aşağıya e-posta adresinizi girin",
+      "email": "E posta Adresi",
+      "password": "Şifre",
+      "forgotYourPassword": "Şifremi Unuttum",
+      "loading": "Yükleniyor...",
+      "button": "Giriş Yap",
+      "dontHaveAccount": "Hesabınız yok mu?",
+      "signUp": "Kaydolun",
+      "success": "Giriş başarılı"
+    }
+  },
+  "signUp": {
+    "form": {
+      "title": "Üye Ol",
+      "description": "Sizde firmanızı yönetmek için bir hesap oluşturun",
+      "name": "Adınız",
+      "surname": "Soyadınız",
+      "email": "E posta Adresi",
+      "phoneNumber": "Telefon Numarası",
+      "password": "Şifre",
+      "firmName": "Firma Adı",
       "address": "Adres",
-      "status": "Durum",
-      "isPassive": "Pasif",
-      "active": "Aktif",
-      "passive": "Pasif",
-      "edit": "Düzenle",
-      "delete": "Sil"
+      "button": "Üye Ol",
+      "login": "Giriş Yap"
     }
   },
   "common": {
     "loading": "Yükleniyor...",
-    "save": "Kaydet",
-    "saving": "Kaydediliyor...",
-    "cancel": "İptal",
-    "delete": "Sil",
-    "edit": "Düzenle",
-    "create": "Oluştur",
-    "update": "Güncelle",
-    "search": "Ara",
-    "filter": "Filtrele",
-    "actions": "İşlemler",
-    "status": "Durum",
-    "active": "Aktif",
-    "passive": "Pasif",
-    "yes": "Evet",
-    "no": "Hayır",
-    "confirm": "Onayla",
-    "back": "Geri",
-    "next": "İleri",
-    "previous": "Önceki",
-    "close": "Kapat",
-    "submit": "Gönder",
-    "reset": "Sıfırla",
-    "clear": "Temizle",
-    "select": "Seç",
-    "selectAll": "Tümünü Seç",
-    "required": "*",
-    "optional": "(İsteğe bağlı)",
-    "noData": "Veri bulunamadı",
-    "error": "Hata",
-    "success": "Başarılı",
-    "warning": "Uyarı",
-    "info": "Bilgi"
-  },
-  "gender": {
-    "male": "Erkek",
-    "female": "Kadın",
-    "other": "Diğer",
-    "notSpecified": "Belirtilmemiş"
-  },
-  "forms": {
-    "validation": {
-      "required": "Bu alan zorunludur",
-      "email": "Geçerli bir e-posta adresi girin",
-      "phone": "Geçerli bir telefon numarası girin",
-      "minLength": "En az {min} karakter olmalıdır",
-      "maxLength": "En fazla {max} karakter olmalıdır",
-      "password": "Şifre en az 6 karakter olmalıdır",
-      "confirmPassword": "Şifreler eşleşmiyor"
-    }
-  },
-  "language": {
-    "current": "Türkçe",
-    "switch": "Dil Değiştir",
-    "turkish": "Türkçe",
-    "english": "İngilizce"
+    "filter": "Filtrele"
   },
   "errors": {
-    "404": {
-      "title": "Sayfa Bulunamadı",
-      "message": "Aradığınız sayfa mevcut değil veya taşınmış.",
-      "goBack": "Geri Dön",
-      "goHome": "Ana Sayfaya Git",
-      "help": "Bu bir hata olduğunu düşünüyorsanız, lütfen destek ile iletişime geçin."
-    },
     "403": {
       "title": "Erişim Engellendi",
       "message": "Bu kaynağa erişim izniniz yok.",
       "goBack": "Geri Dön",
       "goHome": "Ana Sayfaya Git"
-    },
-    "401": {
-      "title": "Yetkisiz Erişim",
-      "message": "Bu kaynağa erişmek için giriş yapın."
-    },
-    "500": {
-      "title": "Sunucu Hatası",
-      "message": "Sunucumuzda bir sorun oluştu. Lütfen daha sonra tekrar deneyin."
-    },
-    "general": {
-      "title": "Bir sorun oluştu",
-      "message": "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.",
-      "tryAgain": "Tekrar Dene",
-      "goHome": "Ana Sayfaya Git",
-      "help": "Bu sorun devam ederse, lütfen destek ile iletişime geçin."
     },
     "loading": {
       "title": "Veri yüklenemedi",

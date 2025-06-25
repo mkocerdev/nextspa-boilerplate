@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "deviceName": "Device A",
+    "pressure": 2.4,
+    "inHeat": 75.2,
+    "outHeat": 68.9,
+    "status": "active",
+    "timestamp": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": 2,
+    "deviceName": "Device A",
+    "pressure": 2.6,
+    "inHeat": 76.8,
+    "outHeat": 69.5,
+    "status": "active",
+    "timestamp": "2024-01-15T09:00:00Z"
+  },
+  {
+    "id": 3,
+    "deviceName": "Device A",
+    "pressure": 2.8,
+    "inHeat": 78.1,
+    "outHeat": 70.2,
+    "status": "active",
+    "timestamp": "2024-01-15T10:00:00Z"
+  },
+  {
+    "id": 4,
+    "deviceName": "Device A",
+    "pressure": 2.5,
+    "inHeat": 77.3,
+    "outHeat": 69.8,
+    "status": "active",
+    "timestamp": "2024-01-15T11:00:00Z"
+  },
+  {
+    "id": 5,
+    "deviceName": "Device A",
+    "pressure": 2.9,
+    "inHeat": 79.2,
+    "outHeat": 71.1,
+    "status": "active",
+    "timestamp": "2024-01-15T12:00:00Z"
+  },
+  {
+    "id": 6,
+    "deviceName": "Device A",
+    "pressure": 3.1,
+    "inHeat": 80.5,
+    "outHeat": 72.3,
+    "status": "active",
+    "timestamp": "2024-01-15T13:00:00Z"
+  },
+  {
+    "id": 7,
+    "deviceName": "Device A",
+    "pressure": 2.7,
+    "inHeat": 78.9,
+    "outHeat": 70.7,
+    "status": "active",
+    "timestamp": "2024-01-15T14:00:00Z"
+  },
+  {
+    "id": 8,
+    "deviceName": "Device A",
+    "pressure": 2.3,
+    "inHeat": 76.4,
+    "outHeat": 68.6,
+    "status": "active",
+    "timestamp": "2024-01-15T15:00:00Z"
+  },
+  {
+    "id": 9,
+    "deviceName": "Device B",
+    "pressure": 1.8,
+    "inHeat": 82.1,
+    "outHeat": 74.3,
+    "status": "active",
+    "timestamp": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": 10,
+    "deviceName": "Device B",
+    "pressure": 1.9,
+    "inHeat": 83.2,
+    "outHeat": 75.1,
+    "status": "active",
+    "timestamp": "2024-01-15T09:00:00Z"
+  },
+  {
+    "id": 11,
+    "deviceName": "Device B",
+    "pressure": 2.1,
+    "inHeat": 84.5,
+    "outHeat": 76.2,
+    "status": "active",
+    "timestamp": "2024-01-15T10:00:00Z"
+  },
+  {
+    "id": 12,
+    "deviceName": "Device B",
+    "pressure": 1.7,
+    "inHeat": 81.8,
+    "outHeat": 73.9,
+    "status": "active",
+    "timestamp": "2024-01-15T11:00:00Z"
+  },
+  {
+    "id": 13,
+    "deviceName": "Device B",
+    "pressure": 2.0,
+    "inHeat": 85.1,
+    "outHeat": 77.3,
+    "status": "active",
+    "timestamp": "2024-01-15T12:00:00Z"
+  },
+  {
+    "id": 14,
+    "deviceName": "Device B",
+    "pressure": 2.3,
+    "inHeat": 86.2,
+    "outHeat": 78.1,
+    "status": "active",
+    "timestamp": "2024-01-15T13:00:00Z"
+  },
+  {
+    "id": 15,
+    "deviceName": "Device B",
+    "pressure": 1.6,
+    "inHeat": 80.9,
+    "outHeat": 73.2,
+    "status": "active",
+    "timestamp": "2024-01-15T14:00:00Z"
+  },
+  {
+    "id": 16,
+    "deviceName": "Device B",
+    "pressure": 1.9,
+    "inHeat": 83.7,
+    "outHeat": 75.8,
+    "status": "active",
+    "timestamp": "2024-01-15T15:00:00Z"
+  },
+  {
+    "id": 17,
+    "deviceName": "Device C",
+    "pressure": 3.1,
+    "inHeat": 69.8,
+    "outHeat": 62.5,
+    "status": "maintenance",
+    "timestamp": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": 18,
+    "deviceName": "Device C",
+    "pressure": 3.3,
+    "inHeat": 70.2,
+    "outHeat": 63.1,
+    "status": "maintenance",
+    "timestamp": "2024-01-15T09:00:00Z"
+  },
+  {
+    "id": 19,
+    "deviceName": "Device C",
+    "pressure": 3.5,
+    "inHeat": 71.5,
+    "outHeat": 64.2,
+    "status": "maintenance",
+    "timestamp": "2024-01-15T10:00:00Z"
+  },
+  {
+    "id": 20,
+    "deviceName": "Device C",
+    "pressure": 2.9,
+    "inHeat": 68.9,
+    "outHeat": 61.8,
+    "status": "maintenance",
+    "timestamp": "2024-01-15T11:00:00Z"
+  },
+  {
+    "id": 21,
+    "deviceName": "Device C",
+    "pressure": 3.2,
+    "inHeat": 72.1,
+    "outHeat": 65.3,
+    "status": "maintenance",
+    "timestamp": "2024-01-15T12:00:00Z"
+  },
+  {
+    "id": 22,
+    "deviceName": "Device C",
+    "pressure": 3.7,
+    "inHeat": 73.8,
+    "outHeat": 66.7,
+    "status": "maintenance",
+    "timestamp": "2024-01-15T13:00:00Z"
+  },
+  {
+    "id": 23,
+    "deviceName": "Device C",
+    "pressure": 2.8,
+    "inHeat": 67.5,
+    "outHeat": 60.9,
+    "status": "maintenance",
+    "timestamp": "2024-01-15T14:00:00Z"
+  },
+  {
+    "id": 24,
+    "deviceName": "Device C",
+    "pressure": 3.0,
+    "inHeat": 70.8,
+    "outHeat": 63.5,
+    "status": "maintenance",
+    "timestamp": "2024-01-15T15:00:00Z"
+  }
+]
