@@ -1,38 +1,38 @@
 "use client";
 
 import { type LucideIcon } from "lucide-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
+
 import {
   SidebarGroup,
+  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
-export function NavItems({
-  projects,
+export function NavDocuments({
+  items,
 }: {
-  projects: {
+  items: {
     i18nkey: string;
     url: string;
     icon: LucideIcon;
   }[];
 }) {
   const { t } = useTranslation();
-  const pathname = usePathname();
 
   return (
-    <SidebarGroup className="group-data-[collapsible=icon]:hidden mt-6 px-0">
+    <SidebarGroup className="group-data-[collapsible=icon]:hidden">
+      <SidebarGroupLabel>{t("sidebar.documents")}</SidebarGroupLabel>
       <SidebarMenu>
-        {projects.map((item) => (
+        {items.map((item) => (
           <SidebarMenuItem key={item.i18nkey}>
-            <SidebarMenuButton asChild isActive={pathname === item.url}>
-              <Link href={item.url}>
+            <SidebarMenuButton asChild>
+              <a href={item.url}>
                 <item.icon />
                 <span>{t(item.i18nkey)}</span>
-              </Link>
+              </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
         ))}

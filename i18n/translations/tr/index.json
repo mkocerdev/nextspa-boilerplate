@@ -1,7 +1,7 @@
 {
   "dashboard": {
     "title": "Dashboard",
-    "welcome": "{timeOfDay}, {name}! Tüm sistemler çalışıyor! 📊",
+    "welcome": "{timeOfDay}, {name}! 👋 Tüm sistemler çalışıyor!",
     "today": "Bugün",
     "timeOfDay": {
       "morning": "Günaydın",
@@ -39,7 +39,13 @@
     "dashboard": "Dashboard",
     "devices": "Cihazlar",
     "listeners": "Dinleyiciler",
-    "flows": "Akışlar"
+    "flows": "Akışlar",
+    "reports": "Raporlar",
+    "documents": "Belgeler",
+    "users": "Kullanıcılar",
+    "userGuide": "Kullanım Kılavuzu",
+    "support": "Nebisense Destek",
+    "integrations": "Entegrasyonlar"
   },
   "devices": {
     "title": "Cihazlar",

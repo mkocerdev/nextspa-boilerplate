@@ -15,7 +15,7 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { LanguageSwitcher } from "@/components/layout/language-switcher";
+import { LanguageSwitcher } from "@/components/layout/header/header-language-switcher";
 
 export function HeaderNavUser() {
   const [user, setUser] = useState<User | null>(null);
@@ -96,7 +96,7 @@ export function HeaderNavUser() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="min-w-56 cursor-pointer">
-          <div className="flex items-center justify-start gap-2 p-2">
+          <div className="flex items-center justify-start gap-2 px-2 py-4">
             <Avatar className="h-8 w-8">
               <AvatarImage src="" alt={user.fullname || user.name || ""} />
               <AvatarFallback>

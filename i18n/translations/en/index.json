@@ -1,7 +1,7 @@
 {
   "dashboard": {
     "title": "Dashboard",
-    "welcome": "Good {timeOfDay}, {name}! All systems operational! 📊",
+    "welcome": "Good {timeOfDay}, {name}! 👋 All systems operational!",
     "today": "Today is",
     "timeOfDay": {
       "morning": "morning",
@@ -39,7 +39,13 @@
     "dashboard": "Dashboard",
     "devices": "Devices",
     "listeners": "Listeners",
-    "flows": "Flows"
+    "flows": "Flows",
+    "reports": "Reports",
+    "documents": "Documents",
+    "users": "Users",
+    "userGuide": "User Guide",
+    "support": "Nebisense Support",
+    "integrations": "Integrations"
   },
   "devices": {
     "title": "Devices",

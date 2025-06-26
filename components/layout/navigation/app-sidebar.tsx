@@ -6,10 +6,14 @@ import {
   MonitorSmartphone,
   AudioWaveform,
   Workflow,
+  FileChartColumn,
+  Users,
+  Book,
+  LifeBuoy,
+  Blocks,
 } from "lucide-react";
 import { useTheme } from "next-themes";
 
-import { NavItems } from "./nav-items";
 import {
   Sidebar,
   SidebarContent,
@@ -19,6 +23,10 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import Image from "next/image";
+
+import { NavMain } from "./nav-main";
+import { NavDocuments } from "./nav-documents";
+import { NavSecondary } from "./nav-secondary";
 
 const data = {
   items: [
@@ -43,6 +51,35 @@ const data = {
       icon: Workflow,
     },
   ],
+  documents: [
+    {
+      i18nkey: "sidebar.reports",
+      url: "/company/reports",
+      icon: FileChartColumn,
+    },
+    {
+      i18nkey: "sidebar.userGuide",
+      url: "/company/user-guide",
+      icon: Book,
+    },
+    {
+      i18nkey: "sidebar.integrations",
+      url: "/company/integrations",
+      icon: Blocks,
+    },
+  ],
+  secondary: [
+    {
+      i18nkey: "sidebar.users",
+      url: "/company/users",
+      icon: Users,
+    },
+    {
+      i18nkey: "sidebar.support",
+      url: "/company/support",
+      icon: LifeBuoy,
+    },
+  ],
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
@@ -58,6 +95,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     <Sidebar
       variant="inset"
       {...props}
+      collapsible="offcanvas"
       className="p-0 border-r border-sidebar-border"
     >
       <SidebarHeader className="border-b border-sidebar-border px-4 py-5">
@@ -74,7 +112,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent className="px-4">
-        <NavItems projects={data.items} />
+        <NavMain items={data.items} />
+        <NavDocuments items={data.documents} />
+
+        <NavSecondary items={data.secondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter className="px-4">
         {/* User navigation moved to page header */}

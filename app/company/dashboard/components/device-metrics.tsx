@@ -26,7 +26,7 @@ export function DeviceMetrics({
           <CardTitle className="text-sm font-medium">
             {t("dashboard.metrics.pressureOne")}
           </CardTitle>
-          <Gauge className="h-10 w-10 text-chart-2" />
+          <Gauge className="h-10 w-10 text-chart-1" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">{pressureOne.toFixed(1)} bar</div>
@@ -41,7 +41,7 @@ export function DeviceMetrics({
           <CardTitle className="text-sm font-medium">
             {t("dashboard.metrics.pressureTwo")}
           </CardTitle>
-          <CircleGauge className="h-10 w-10 text-chart-2" />
+          <CircleGauge className="h-10 w-10 text-chart-1" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">{pressureTwo.toFixed(1)} bar</div>
@@ -56,7 +56,7 @@ export function DeviceMetrics({
           <CardTitle className="text-sm font-medium">
             {t("dashboard.metrics.inHeat")}
           </CardTitle>
-          <Thermometer className="h-10 w-10 text-chart-2" />
+          <Thermometer className="h-10 w-10 text-chart-1" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">{inHeat.toFixed(1)}°C</div>
@@ -71,7 +71,7 @@ export function DeviceMetrics({
           <CardTitle className="text-sm font-medium">
             {t("dashboard.metrics.outHeat")}
           </CardTitle>
-          <Zap className="h-10 w-10 text-chart-2" />
+          <Zap className="h-10 w-10 text-chart-1" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">{outHeat.toFixed(1)}°C</div>

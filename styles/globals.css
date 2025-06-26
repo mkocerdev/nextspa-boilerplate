@@ -89,20 +89,6 @@
   }
 }
 
-.header {
-  width: calc(100% - var(--sidebar-width));
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: var(--sidebar-width);
-  right: 0;
-  padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .main-content {
-  margin-top: 4rem;
   padding: 1rem;
 }
