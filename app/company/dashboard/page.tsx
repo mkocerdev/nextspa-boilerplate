@@ -175,7 +175,7 @@ export default function DashboardPage() {
       />
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-semibold">
-          {t("dashboard.title", { deviceName: selectedDevice })}
+          {t("dashboard.deviceDashboard", { deviceName: selectedDevice })}
         </h1>
         {/* Device Selector */}
         <div className="flex items-center space-x-2">

@@ -1,6 +1,7 @@
 {
   "dashboard": {
-    "title": " {deviceName} Dashboard",
+    "title": "Dashboard",
+    "deviceDashboard": "{deviceName} Dashboard",
     "welcome": "{timeOfDay}, {name}! 👋 ",
     "today": "Bugün",
     "timeOfDay": {

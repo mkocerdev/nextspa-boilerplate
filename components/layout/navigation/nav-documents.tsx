@@ -2,6 +2,7 @@
 
 import { type LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 import {
   SidebarGroup,
@@ -29,10 +30,10 @@ export function NavDocuments({
         {items.map((item) => (
           <SidebarMenuItem key={item.i18nkey}>
             <SidebarMenuButton asChild>
-              <a href={item.url}>
+              <Link href={item.url}>
                 <item.icon />
                 <span>{t(item.i18nkey)}</span>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         ))}

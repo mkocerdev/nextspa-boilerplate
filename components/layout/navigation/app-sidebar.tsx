@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import {
   LayoutPanelLeft,
   MonitorSmartphone,
@@ -101,13 +102,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader className="border-b border-sidebar-border px-4 py-5">
         <SidebarMenu>
           <SidebarMenuItem className="pr-12">
-            <Image
-              src={logoSrc}
-              alt="logo"
-              width={100}
-              height={100}
-              className="w-full h-auto"
-            />
+            <Link href={"/company/dashboard"}>
+              <Image
+                src={logoSrc}
+                alt="logo"
+                width={100}
+                height={100}
+                className="w-full h-auto"
+              />
+            </Link>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
