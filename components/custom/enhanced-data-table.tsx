@@ -75,7 +75,7 @@ export function DataTable<TData, TValue>({
                     .getColumn(searchColumn)
                     ?.setFilterValue(event.target.value)
                 }
-                className="max-w-lg"
+                className="max-w-lg bg-sidebar"
               />
             )}
           </div>
@@ -84,7 +84,7 @@ export function DataTable<TData, TValue>({
           )}
         </div>
       )}
-      <div className="rounded-md border">
+      <div className="rounded-md border bg-sidebar">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (

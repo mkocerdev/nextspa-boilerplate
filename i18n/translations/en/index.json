@@ -62,14 +62,18 @@
     "newDevice": "New Device",
     "editDevice": "Edit Device",
     "searchPlaceholder": "Search devices...",
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
     "table": {
       "edit": "Edit",
       "delete": "Delete",
       "headers": {
-        "fullName": "Full Name",
-        "phoneNumber": "Phone Number",
-        "email": "Email",
-        "gender": "Gender",
+        "deviceName": "Device Name",
+        "imei": "IMEI",
+        "deviceId": "Device ID",
+        "status": "Status",
         "actions": "Actions"
       }
     }

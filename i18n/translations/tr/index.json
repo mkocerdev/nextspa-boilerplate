@@ -62,14 +62,18 @@
     "newDevice": "Cihaz Ekle",
     "editDevice": "Cihaz Düzenle",
     "searchPlaceholder": "Cihaz adına göre ara...",
+    "status": {
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
     "table": {
       "edit": "Düzenle",
       "delete": "Sil",
       "headers": {
-        "fullName": "Ad Soyad",
-        "phoneNumber": "Telefon Numarası",
-        "email": "E-posta",
-        "gender": "Cinsiyet",
+        "deviceName": "Cihaz Adı",
+        "imei": "IMEI",
+        "deviceId": "Cihaz ID",
+        "status": "Durum",
         "actions": "İşlemler"
       }
     }
