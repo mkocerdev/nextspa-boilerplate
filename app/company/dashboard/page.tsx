@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { DeviceMetrics } from "@/app/company/dashboard/components/device-metrics";
 import { DeviceCharts } from "@/app/company/dashboard/components/device-charts";
 import { DeviceTable } from "@/app/company/dashboard/components/device-table";
+import { OverviewStats } from "@/app/company/dashboard/components/overview-stats";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Select,
@@ -41,6 +42,14 @@ export default function DashboardPage() {
   });
   const authData = authClient.getAuthData();
   const user = authData?.user;
+
+  // Sample data for overview statistics
+  const overviewStats = {
+    deviceCount: 12,
+    listenerCount: 8,
+    flowCount: 15,
+    organizationCount: 3,
+  };
 
   // Calculate time of day
   const getTimeOfDayKey = () => {
@@ -136,7 +145,7 @@ export default function DashboardPage() {
   }, [setPageTitle, t]);
 
   return (
-    <div className="px-6 py-1 space-y-6">
+    <div className=" space-y-6">
       <div className="flex justify-between items-start">
         <div className="">
           <h1 className="text-lg font-semibold">
@@ -155,7 +164,19 @@ export default function DashboardPage() {
             })}
           </p>
         </div>
+      </div>
 
+      {/* Overview Statistics */}
+      <OverviewStats
+        deviceCount={overviewStats.deviceCount}
+        listenerCount={overviewStats.listenerCount}
+        flowCount={overviewStats.flowCount}
+        organizationCount={overviewStats.organizationCount}
+      />
+      <div className="flex justify-between items-center">
+        <h1 className="text-lg font-semibold">
+          {t("dashboard.title", { deviceName: selectedDevice })}
+        </h1>
         {/* Device Selector */}
         <div className="flex items-center space-x-2">
           <Select value={selectedDevice} onValueChange={setSelectedDevice}>
@@ -178,7 +199,6 @@ export default function DashboardPage() {
           </Select>
         </div>
       </div>
-
       {/* Device Metrics Cards */}
       <DeviceMetrics
         pressureOne={averages.pressureOne}

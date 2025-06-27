@@ -4,8 +4,8 @@ import * as React from "react";
 import {
   LayoutPanelLeft,
   MonitorSmartphone,
-  AudioWaveform,
-  Workflow,
+  Radio,
+  GitBranch,
   FileChartColumn,
   Users,
   Book,
@@ -43,12 +43,12 @@ const data = {
     {
       i18nkey: "sidebar.listeners",
       url: "/company/listeners",
-      icon: AudioWaveform,
+      icon: Radio,
     },
     {
       i18nkey: "sidebar.flows",
       url: "/company/flows",
-      icon: Workflow,
+      icon: GitBranch,
     },
   ],
   documents: [

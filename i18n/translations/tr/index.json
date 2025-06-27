@@ -1,7 +1,7 @@
 {
   "dashboard": {
-    "title": "Dashboard",
-    "welcome": "{timeOfDay}, {name}! 👋 Tüm sistemler çalışıyor!",
+    "title": " {deviceName} Dashboard",
+    "welcome": "{timeOfDay}, {name}! 👋 ",
     "today": "Bugün",
     "timeOfDay": {
       "morning": "Günaydın",
@@ -10,6 +10,16 @@
       "night": "İyi Geceler"
     },
     "selectDevice": "Cihaz Seç",
+    "overview": {
+      "devices": "Cihazlar",
+      "listeners": "Dinleyiciler",
+      "flows": "Akışlar",
+      "organizations": "Organizasyonlar",
+      "totalDevices": "Toplam cihaz",
+      "activeListeners": "Aktif dinleyiciler",
+      "activeFlows": "Aktif akışlar",
+      "totalOrganizations": "Toplam organizasyon"
+    },
     "metrics": {
       "pressureOne": "Basınç Bir",
       "pressureTwo": "Basınç İki",

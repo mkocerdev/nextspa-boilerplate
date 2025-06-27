@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <div className="">
             <PageHeaderProvider>
               <PageHeader />
-              <div className="main-content">{children}</div>
+              <div className="px-8 py-5">{children}</div>
             </PageHeaderProvider>
           </div>
         </SidebarInset>

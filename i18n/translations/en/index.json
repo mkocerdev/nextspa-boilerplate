@@ -1,7 +1,7 @@
 {
   "dashboard": {
-    "title": "Dashboard",
-    "welcome": "Good {timeOfDay}, {name}! 👋 All systems operational!",
+    "title": "{deviceName} Dashboard",
+    "welcome": "Good {timeOfDay}, {name}! 👋",
     "today": "Today is",
     "timeOfDay": {
       "morning": "morning",
@@ -10,6 +10,16 @@
       "night": "night"
     },
     "selectDevice": "Select Device",
+    "overview": {
+      "devices": "Devices",
+      "listeners": "Listeners",
+      "flows": "Flows",
+      "organizations": "Organizations",
+      "totalDevices": "Total devices",
+      "activeListeners": "Active listeners",
+      "activeFlows": "Active flows",
+      "totalOrganizations": "Total organizations"
+    },
     "metrics": {
       "pressureOne": "Pressure One",
       "pressureTwo": "Pressure Two",
