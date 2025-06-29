@@ -86,7 +86,7 @@
     "form": {
       "title": "Giriş Yap",
       "description": "Hesabınıza giriş yapmak için aşağıya e-posta adresinizi girin",
-      "email": "E posta Adresi",
+      "username": "Kullanıcı Adı",
       "password": "Şifre",
       "forgotYourPassword": "Şifremi Unuttum",
       "loading": "Yükleniyor...",

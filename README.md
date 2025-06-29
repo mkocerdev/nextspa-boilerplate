@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```bash
+# API Configuration
+NEXT_PUBLIC_API_BASE_URL=https://private-tutor-api.yonesoft.com/api
+```
+
 ## Getting Started
 
 First, run the development server:

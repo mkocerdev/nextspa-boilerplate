@@ -58,11 +58,11 @@ export function LoginForm({
       <form onSubmit={handleLogin}>
         <div className="flex flex-col gap-6">
           <div className="grid gap-2">
-            <Label htmlFor="email">{t("login.form.email")}</Label>
+            <Label htmlFor="username">{t("login.form.username")}</Label>
             <Input
-              id="email"
-              type="email"
-              placeholder="m@example.com"
+              id="username"
+              type="text"
+              placeholder="example"
               required
               value={username}
               onChange={(e) => setUsername(e.target.value)}

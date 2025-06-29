@@ -1,5 +1,6 @@
 import axios, { AxiosError } from "axios";
 import { User, UserResponse } from "@/types/user";
+import { config } from "./config";
 
 export interface LoginResponse {
   token: string;
@@ -8,7 +9,7 @@ export interface LoginResponse {
 
 export class AuthClient {
   private static instance: AuthClient;
-  private baseUrl = "https://private-tutor-api.yonesoft.com/api";
+  private baseUrl = config.api.baseUrl;
 
   public static getInstance(): AuthClient {
     if (!AuthClient.instance) {

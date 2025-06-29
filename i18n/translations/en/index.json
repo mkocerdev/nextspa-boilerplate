@@ -86,7 +86,7 @@
     "form": {
       "title": "Welcome back",
       "description": "Enter your credentials to access your account",
-      "email": "Email",
+      "username": "Username",
       "password": "Password",
       "forgotYourPassword": "Forgot your password?",
       "loading": "Signing in...",
