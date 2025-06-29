@@ -3,6 +3,7 @@
 import { type LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import {
   SidebarGroup,
@@ -22,6 +23,7 @@ export function NavDocuments({
   }[];
 }) {
   const { t } = useTranslation();
+  const pathname = usePathname();
 
   return (
     <SidebarGroup className="group-data-[collapsible=icon]:hidden">
@@ -29,7 +31,7 @@ export function NavDocuments({
       <SidebarMenu>
         {items.map((item) => (
           <SidebarMenuItem key={item.i18nkey}>
-            <SidebarMenuButton asChild>
+            <SidebarMenuButton asChild isActive={pathname.startsWith(item.url)}>
               <Link href={item.url}>
                 <item.icon />
                 <span>{t(item.i18nkey)}</span>

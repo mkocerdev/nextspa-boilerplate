@@ -33,7 +33,7 @@ export function NavMain({
               <Link href={item.url}>
                 <SidebarMenuButton
                   tooltip={item.i18nkey}
-                  isActive={pathname === item.url}
+                  isActive={pathname.startsWith(item.url)}
                 >
                   {item.url && <item.icon />}
                   <span className="text-sm">{t(item.i18nkey)}</span>
